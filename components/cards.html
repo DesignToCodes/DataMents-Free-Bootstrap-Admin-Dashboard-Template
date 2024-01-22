@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo/logo-sm.png" type="image/gif" sizes="16x16">
+    <title>Cards</title>
+    <meta name="og:description" content="unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" property="og:title" content="dataments - free bootstrap admin dashboard template">
+    <meta property="og:image" content="#">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../lib/bootstrap_5/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <!-- main css -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="d2c_wrapper">
+
+        <!-- sidebar -->
+        <div class="d2c_sidebar rounded-4 px-4 py-4 py-md-4 m-4 me-0" id="sidebar">
+            <div class="d-flex flex-column h-100">
+                <a href="../index.html" class="mb-0 brand-icon">
+                    <img class="navbar-brand w-100" src="../assets/images/logo/logo.png" alt="logo">
+                </a>
+                <hr class="divider">
+                <ul class="navbar-nav flex-grow-1" id="d2c_Sidebar">
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home me-2"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#app" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-layer-group me-2"></i>
+                            <span>App</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="app" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/email.html">Email</a>
+                            </li>
+                             
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chat.html">Chat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/notifications.html">Notification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/calender.html">Calender</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/invoice.html">Invoice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/create_invoice.html">Create Invoice</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../components/widget.html">
+                            <i class="fas fa-list me-2"></i>
+                            <span>Widget</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#charts" aria-expanded="false" href="#">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            <span>Charts</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="charts" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/apexchart.html">ApexChart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chartjs.html">ChartJs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/amcharts.html">Amcharts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#form" aria-expanded="false"
+                            href="#">
+                            <i class="fab fa-wpforms me-2"></i>
+                            <span>Form</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="form" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basicform.html">Basic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/advancedform.html">Advance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-table me-2"></i>
+                            <span>Table</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="table" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basictable.html">Basic Table</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/datatable.html">Data Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#userPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-users me-2"></i>
+                            <span>User Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="userPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/signin.html">Sing In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/sign_up.html">Sing Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/forget.html">Forget Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/lockscreen.html">Lock Screen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/profile.html">User Profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#uiComponents" aria-expanded="true" href="#">
+                            <i class="fas fa-th me-2"></i>
+                            <span>UI Components</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3 show" id="uiComponents" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/icon.html">Icon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/button.html">Button</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/progressbar.html">Progress Bar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/pagination.html">Pagination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link active" href="../components/cards.html">Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/slider.html">Slider</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/dropdown.html">Dropdown</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/modal.html">Modal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/timeline.html">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/tabs.html">Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/breadcrumbs.html">Breadcrumbs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/colorpalettes.html">Color Palette</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/map.html">Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#extraPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-file-alt me-2"></i>
+                            <span>Extra Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="extraPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/blank.html">Blank Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/404.html">404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/500.html">500</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/documentation.html">
+                            <i class="fas fa-book-open me-2"></i>
+                            <span>Documentation</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                </ul>
+
+                <hr class="divider">
+
+                <!-- Sidebar: Profile -->
+                <div class="sidebar-mini-btn text-light">
+                    <div class="dropdown">
+                        <a class="dropdown-closer" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                             <img class="img-profile rounded-circle object-fit-cover border border-2 border-white me-2"
+                                src="../assets/images/avatar/man-4.png" alt="avatar" width="30" height="30">
+                            <span>Robar Smith</span>
+                        </a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu shadow border-0 end-0 start rounded-3">
+                            <a class="dropdown-item" href="../pages/profile.html">
+                                <i class="fas fa-user fa-fw me-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-comment-alt fa-fw me-2 text-gray-400"></i>
+                                Message
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cog fa-fw me-2 text-gray-400"></i>
+                                Profile Setting
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-fw me-2 text-gray-400"></i>
+                                Logout
+                            </a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar: Profile -->
+            </div>
+        </div>
+
+        <!-- Page Content  -->
+        <div class="d2c_main px-lg-4 px-md-4 px-3">
+
+            <!-- Top Nav -->
+            <nav
+                class="navbar navbar-expand navbar-light sticky-top bg-white shadow py-2 px-3 rounded-4 d2c_top_navbar my-4">
+                <!-- Sidebar toggler -->
+                <button type="button" id="sidebarCollapse"
+                    class="btn btn-transparent text-info d2c_sidebar_collapse me-1">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Sidebar toggler -->
+                <div>
+                    <!-- Search Form -->
+                    <form class="form d2c_nav_form me-3 d-none d-md-flex" role="search">
+                        <div class="input-group">
+                            <button class="btn btn-outline-info rounded-end rounded-pill border-end-0" type="submit">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                            <input class="form-control border-start-0 rounded-start rounded-pill" type="search"
+                                placeholder="Search..." aria-label="Search" required>
+                        </div>
+                    </form>
+                    <!-- Search Form: Nav Item -->
+                    <div class="d-flex d-md-none">
+                        <!-- Search Box: Nav Item -->
+                        <a class="nav-link text-info" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-search fa-sm"></i>
+                        </a>
+
+                        <ul class="dropdown-menu p-0 mt-0 border-0 rounded-pill">
+                            <li>
+                                <form class="form d2c_nav_form" role="search">
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-info rounded-end rounded-pill border-end-0"
+                                            type="submit">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                        <input class="form-control border-start-0 rounded-start rounded-pill"
+                                            type="search" placeholder="Search..." aria-label="Search" required>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search Form: Nav Item -->
+
+                <ul class="navbar-nav align-items-center mb-lg-0 ms-auto">
+                    <!-- Notification: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link text-info p-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bell fa-fw"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-secondary border rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow border-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Notifications</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>19 sec ago</small></p>
+                                    <h6 class="mb-0">Hi there! I am wondering if you can help me with a problem I've been having.</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>2 min ago</small></p>
+                                    <h6 class="mb-0">
+                                        I have the photos that you ordered last month, how would
+                                        you like them sent to you?
+                                    </h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>3 min ago</small></p>
+                                    <h6 class="mb-0">Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>4 min ago</small></p>
+                                    <h6 class="mb-0">Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../pages/notifications.html">See All
+                                Notifications</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+
+                    </li>
+                    <!-- Notification: Nav Item -->
+
+                    <!-- MailBox: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link position-relative text-info p-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu shadow border-0 end-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Mail</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-1.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>3 min ago</small></p>
+                                        Hi there! I am wondering if you can help me with a
+                                        problem I've been having.
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-2.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>4 min ago</small></p>
+                                        I have the photos that you ordered last month, how would you like them sent to you?
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-3.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>6 min ago</small></p>
+                                        Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-4.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>10 min ago</small></p>
+                                        Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../components/email.html">See All Mail</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </li>
+                    <!-- MailBox: Nav Item -->
+                </ul>
+            </nav>
+            <!-- Top Nav -->
+
+            <!-- Main Content -->
+            <div class="body">
+
+                <h5 class="text-info">Components</h5>
+                <!-- Breadcrumb item -->
+                <nav class="mb-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb d2c_global_breadcrumbs">
+                        <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home"></i></a></li>
+                         
+                        <li class="breadcrumb-item active" aria-current="page">Cards</li>
+                    </ol>
+                </nav>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0 text-capitalize">Basic Cards Example</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- card one -->
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-4 mb-md-0 d2c_basic_card_1">
+                                    <img src="../assets/images/post_card_image_1.jpg" class="card-img-top w-100"
+                                        alt="post card image">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#" class="text-primary">You Will Thank Us - 10
+                                                Tips About SALE You Need To Know</a></h5>
+                                        <p class="card-text">Store and access information on a device. Personalized.
+                                            Personalized content. Ad and content measurement.</p>
+                                        <a href="#" class="btn btn-outline-primary rounded-pill">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card two -->
+                            <div class="col-md-6 col-xl-4 mb-md-4 mb-xl-0">
+                                <div class="card mb-4 mb-md-0 d2c_basic_card_2 p-4">
+                                    <img src="../assets/images/post_card_image_2.jpg" class="card-img-top w-100"
+                                        alt="post card image">
+                                    <div class="card-body px-0 pb-0">
+                                        <h5 class="card-title"><a href="#" class="text-secondary">Super Easy Ways To
+                                                Learn Everything About CORPORATE</a></h5>
+                                        <p class="card-text">Store and access information on a device. Personalized.
+                                            Personalized content. Ad and content measurement.</p>
+                                        <a href="#" class="btn text-primary p-0">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card three -->
+                            <div class="col-md-6 offset-md-3 offset-xl-0 col-xl-4">
+                                <div class="card mb-0 d2c_basic_card_3">
+                                    <img src="../assets/images/post_card_image_3.jpg" class="card-img-top w-100"
+                                        alt="post card image">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="#" class="text-primary">How To Find The Right
+                                                HAPPY FAMILY For Your Specific.</a></h5>
+                                        <p class="card-text">Store and access information on a device. Personalized.
+                                            Personalized content. Ad and content measurement.</p>
+                                        <span class="d2c_time_status text-secondary">Last updated 3 min ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- horizontal card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0 text-capitalize">Horizontal Card</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-6 mb-md-4 mb-xl-0">
+                                <div class="card mb-4 mb-md-0 d2c_horizontal_1">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="../assets/images/post_card_image_4.jpg"
+                                                class="card-img-top w-100 h-100" alt="post card image">
+                                        </div>
+                                        <div class="col-md-8 d-flex align-items-center">
+                                            <div class="card-body py-4 pe-4 ps-md-0">
+                                                <h5 class="card-title"><a href="#" class="text-primary">You Will Thank
+                                                        Us - 10 Tips About SALE You Need To Know</a></h5>
+                                                <p class="card-text">Store and access information on a device.
+                                                    Personalized. Personalized content. Ad and content measurement.</p>
+                                                <a href="#" class="btn btn-outline-primary rounded-pill">View
+                                                    Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-0 p-4 d2c_horizontal_card_2">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <img src="../assets/images/post_card_image_4.jpg"
+                                                class="card-img-top w-100 h-100" alt="post card image">
+                                        </div>
+                                        <div class="col-md-8 d-flex align-items-center">
+                                            <div class="card-body p-0">
+                                                <h5 class="card-title"><a href="#" class="text-primary">How To Find The
+                                                        Right HAPPY FAMILY For Your Specific.</a></h5>
+                                                <p class="card-text">Store and access information on a device.
+                                                    Personalized. Personalized content. Ad and content measurement.</p>
+                                                <a href="#" class="btn btn-outline-primary rounded-pill">View
+                                                    Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- content card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0 text-capitalize">Content Card</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- text left card -->
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-4 mb-xl-0 d2c_content_card">
+                                    <div class="card-body py-5">
+                                        <h5 class="card-title"><a href="#" class="text-secondary">You Will Thank Us - 10
+                                                Tips About SALE You Need To Know</a></h5>
+                                        <p class="card-text">Some quick example text to build on the card title & make
+                                            up the bulk of the card's content. With supporting text below as a natural
+                                            lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-outline-primary rounded-pill">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- text center card -->
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-4 mb-xl-0 d2c_content_card">
+                                    <div class="card-body text-center py-5">
+                                        <h5 class="card-title"><a href="#" class="text-secondary">Super Easy Ways To
+                                                Learn Everything About Corporate Life.</a></h5>
+                                        <p class="card-text">Some quick example text to build on the card title & make
+                                            up the bulk of the card's content. With supporting text below as a natural
+                                            lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-outline-primary rounded-pill">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- content with icon card -->
+                            <div class="col-md-6 offset-md-3 offset-xl-0 col-xl-4">
+                                <div class="card mb-0 d2c_content_card_3">
+                                    <div class="card-body">
+                                        <div
+                                            class="d2c_icon_wrapper rounded-circle mb-3 text-white bg-primary d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <h5 class="card-title"><a href="#" class="text-primary">How To Find The Right
+                                                HAPPY FAMILY For Your Specific.</a></h5>
+                                        <p class="card-text">Some quick example text to build on the card title & make
+                                            up the bulk of the card's content. With supporting text below as a natural
+                                            lead-in to additional content.</p>
+                                        <a href="#" class="btn rounded-pill text-primary p-0">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- overlay image card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0 text-capitalize">Overlay Image Card</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- overlay card one -->
+                            <div class="col-md-6 col-xl-4">
+                                <div class="d2c_overlay_card overflow-hidden position-relative card mb-4 mb-xl-0">
+                                    <img src="../assets/images/post_card_image_1.jpg" class="card-img-top w-100 h-100"
+                                        alt="post card image">
+                                    <div class="card-body p-4 d-flex align-items-end position-absolute">
+                                        <div>
+                                            <h5 class="card-title mb-2"><a href="#" class="text-white">You Will Thank Us
+                                                    - 10 Tips About SALE You Need To Know</a></h5>
+                                            <p class="card-text text-white">Some quick example text to build on the card
+                                                title & make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overlay card two -->
+                            <div class="col-md-6 col-xl-4">
+                                <div class="d2c_overlay_card overflow-hidden position-relative card mb-4 mb-xl-0">
+                                    <img src="../assets/images/post_card_image_5.jpg" class="card-img-top w-100 h-100"
+                                        alt="post card image">
+                                    <div class="card-body p-4 d-flex align-items-end position-absolute">
+                                        <div>
+                                            <h5 class="card-title mb-2"><a href="#" class="text-white">I Don't Want To
+                                                    Spend This Much Time On Hotel. How About You?</a></h5>
+                                            <p class="card-text text-white">Some quick example text to build on the card
+                                                title & make up the bulk of the card's content.</p>
+                                            <button class="btn rounded-pill text-white border-0">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- overlay card three -->
+                            <div class="col-md-6 offset-md-3 offset-xl-0 col-xl-4">
+                                <div
+                                    class="d2c_overlay_card overflow-hidden position-relative card mb-0 d2c_overlay_card_3">
+                                    <img src="../assets/images/post_card_image_6.jpg" class="card-img-top w-100 h-100"
+                                        alt="post card image">
+                                    <div class="card-body p-4 position-absolute">
+                                        <div class="d2c_card_content h-100 d-flex">
+                                            <h5 class="card-title mb-2"><a href="#" class="text-white">I Don't Want To
+                                                    Spend This Much Time On Hotel. How About You?</a></h5>
+                                            <button class="btn rounded-pill text-white border-0">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Content -->
+
+        </div><!-- Page Content  -->
+    </div>
+
+
+
+
+
+    <!-- Initial  Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../lib/bootstrap_5/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+    template name:{{dataments}}
+    template url:{{https://www.designtocodes.com/product/dataments-free-bootstrap-admin-dashboard-template/}}
+    description:{{unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.}}
+    author: designtocodes 
+    author url: https://www.designtocodes.com 
+    text domain:{{dataments}}
+-->

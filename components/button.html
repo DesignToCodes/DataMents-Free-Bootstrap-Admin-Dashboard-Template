@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo/logo-sm.png" type="image/gif" sizes="16x16">
+    <title>Button</title>
+    <meta name="og:description" content="unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" property="og:title" content="dataments - free bootstrap admin dashboard template">
+    <meta property="og:image" content="#">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../lib/bootstrap_5/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="d2c_wrapper">
+
+        <!-- sidebar -->
+        <div class="d2c_sidebar rounded-4 px-4 py-4 py-md-4 m-4 me-0" id="sidebar">
+            <div class="d-flex flex-column h-100">
+                <a href="../index.html" class="mb-0 brand-icon">
+                    <img class="navbar-brand w-100" src="../assets/images/logo/logo.png" alt="logo">
+                </a>
+                <hr class="divider">
+                <ul class="navbar-nav flex-grow-1" id="d2c_Sidebar">
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home me-2"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#app" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-layer-group me-2"></i>
+                            <span>App</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="app" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/email.html">Email</a>
+                            </li>
+                             
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chat.html">Chat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/notifications.html">Notification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/calender.html">Calender</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/invoice.html">Invoice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/create_invoice.html">Create Invoice</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../components/widget.html">
+                            <i class="fas fa-list me-2"></i>
+                            <span>Widget</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#charts" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            <span>Charts</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="charts" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/apexchart.html">ApexChart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chartjs.html">ChartJs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/amcharts.html">Amcharts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#form" aria-expanded="false" href="#">
+                            <i class="fab fa-wpforms me-2"></i>
+                            <span>Form</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="form" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basicform.html">Basic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/advancedform.html">Advance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-table me-2"></i>
+                            <span>Table</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="table" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basictable.html">Basic Table</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/datatable.html">Data Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#userPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-users me-2"></i>
+                            <span>User Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="userPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/signin.html">Sing In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/sign_up.html">Sing Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/forget.html">Forget Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/lockscreen.html">Lock Screen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/profile.html">User Profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item active">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#uiComponents" aria-expanded="true" href="#">
+                            <i class="fas fa-th me-2"></i>
+                            <span>UI Components</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3 show" id="uiComponents" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/icon.html">Icon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link active" href="../components/button.html">Button</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/progressbar.html">Progress Bar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/pagination.html">Pagination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/cards.html">Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/slider.html">Slider</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/dropdown.html">Dropdown</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/modal.html">Modal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/timeline.html">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/tabs.html">Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/breadcrumbs.html">Breadcrumbs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/colorpalettes.html">Color Palette</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/map.html">Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#extraPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-file-alt me-2"></i>
+                            <span>Extra Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="extraPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/blank.html">Blank Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/404.html">404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/500.html">500</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/documentation.html">
+                            <i class="fas fa-book-open me-2"></i>
+                            <span>Documentation</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                </ul>
+
+                <hr class="divider">
+
+                <!-- Sidebar: Profile -->
+                <div class="sidebar-mini-btn text-light">
+                    <div class="dropdown">
+                        <a class="dropdown-closer" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                             <img class="img-profile rounded-circle object-fit-cover border border-2 border-white me-2"
+                                src="../assets/images/avatar/man-4.png" alt="avatar" width="30" height="30">
+                            <span>Robar Smith</span>
+                        </a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu shadow border-0 end-0 start rounded-3">
+                            <a class="dropdown-item" href="../pages/profile.html">
+                                <i class="fas fa-user fa-fw me-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-comment-alt fa-fw me-2 text-gray-400"></i>
+                                Message
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cog fa-fw me-2 text-gray-400"></i>
+                                Profile Setting
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-fw me-2 text-gray-400"></i>
+                                Logout
+                            </a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar: Profile -->
+            </div>
+        </div>
+
+        <!-- Page Content  -->
+        <div class="d2c_main px-lg-4 px-md-4 px-3">
+
+            <!-- Top Nav -->
+            <nav
+                class="navbar navbar-expand navbar-light sticky-top bg-white shadow py-2 px-3 rounded-4 d2c_top_navbar my-4">
+                <!-- Sidebar toggler -->
+                <button type="button" id="sidebarCollapse"
+                    class="btn btn-transparent text-info d2c_sidebar_collapse me-1">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Sidebar toggler -->
+                <div>
+                    <!-- Search Form -->
+                    <form class="form d2c_nav_form me-3 d-none d-md-flex" role="search">
+                        <div class="input-group">
+                            <button class="btn btn-outline-info rounded-end rounded-pill border-end-0" type="submit">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                            <input class="form-control border-start-0 rounded-start rounded-pill" type="search"
+                                placeholder="Search..." aria-label="Search" required>
+                        </div>
+                    </form>
+                    <!-- Search Form: Nav Item -->
+                    <div class="d-flex d-md-none">
+                        <!-- Search Box: Nav Item -->
+                        <a class="nav-link text-info" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-search fa-sm"></i>
+                        </a>
+
+                        <ul class="dropdown-menu p-0 mt-0 border-0 rounded-pill">
+                            <li>
+                                <form class="form d2c_nav_form" role="search">
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-info rounded-end rounded-pill border-end-0"
+                                            type="submit">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                        <input class="form-control border-start-0 rounded-start rounded-pill"
+                                            type="search" placeholder="Search..." aria-label="Search" required>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search Form: Nav Item -->
+
+                <ul class="navbar-nav align-items-center mb-lg-0 ms-auto">
+                    <!-- Notification: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link text-info p-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bell fa-fw"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-secondary border rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow border-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Notifications</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>19 sec ago</small></p>
+                                    <h6 class="mb-0">Hi there! I am wondering if you can help me with a problem I've been having.</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>2 min ago</small></p>
+                                    <h6 class="mb-0">
+                                        I have the photos that you ordered last month, how would
+                                        you like them sent to you?
+                                    </h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>3 min ago</small></p>
+                                    <h6 class="mb-0">Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>4 min ago</small></p>
+                                    <h6 class="mb-0">Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../pages/notifications.html">See All
+                                Notifications</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+
+                    </li>
+                    <!-- Notification: Nav Item -->
+
+                    <!-- MailBox: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link position-relative text-info p-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu shadow border-0 end-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Mail</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-1.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>3 min ago</small></p>
+                                        Hi there! I am wondering if you can help me with a
+                                        problem I've been having.
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-2.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>4 min ago</small></p>
+                                        I have the photos that you ordered last month, how would you like them sent to you?
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-3.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>6 min ago</small></p>
+                                        Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-4.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>10 min ago</small></p>
+                                        Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../components/email.html">See All Mail</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </li>
+                    <!-- MailBox: Nav Item -->
+                </ul>
+            </nav>
+            <!-- Top Nav -->
+
+            <!-- Main Content -->
+            <div class="body">
+
+                <h5 class="text-info">Components</h5>
+                <!-- Breadcrumb item -->
+                <nav class="mb-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb d2c_global_breadcrumbs">
+                        <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home"></i></a></li>
+                         
+                        <li class="breadcrumb-item active" aria-current="page">Form</li>
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <!-- default button -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Default Buttons</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-primary m-1">Primary</button>
+                                <button class="btn btn-secondary m-1">secondary</button>
+                                <button class="btn btn-success m-1">success</button>
+                                <button class="btn btn-info m-1">info</button>
+                                <button class="btn btn-warning m-1">warning</button>
+                                <button class="btn btn-danger m-1">danger</button>
+                                <button class="btn btn-light m-1">light</button>
+                                <button class="btn btn-dark m-1">dark</button>
+                            </div>
+                        </div>
+                        <!-- outline default button -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Outline Default Buttons</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap’s custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-outline-primary m-1">
+                                    Primary
+                                </button>
+                                <button class="btn btn-outline-secondary m-1">
+                                    secondary
+                                </button>
+                                <button class="btn btn-outline-success m-1">success</button>
+                                <button class="btn btn-outline-info m-1">info</button>
+                                <button class="btn btn-outline-warning m-1">warning</button>
+                                <button class="btn btn-outline-danger m-1">danger</button>
+                                <button class="btn btn-outline-light m-1">light</button>
+                                <button class="btn btn-outline-dark m-1">dark</button>
+                            </div>
+                        </div>
+                        <!-- outline rounded button sizes -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Default Button Sizes</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-primary m-1 btn-lg">Large</button>
+                                <button class="btn btn-secondary m-1">Medium</button>
+                                <button class="btn btn-success m-1 btn-sm">Small</button>
+                            </div>
+                        </div>
+                        <!-- button text with icon -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">button with icon</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-primary m-1 text-capitalize">
+                                    <i class="fas fa-shopping-cart me-1"></i> Add to cart
+                                </button>
+                                <button class="btn btn-secondary m-1 text-capitalize">
+                                    <i class="fas fa-heart me-1"></i>Add to Wishlist
+                                </button>
+                                <button class="btn btn-success m-1 text-capitalize">
+                                    <i class="fas fa-bookmark me-1"></i>
+                                    Add Bookmark
+                                </button>
+                                <button class="btn btn-warning m-1 text-capitalize">
+                                    <i class="fas fa-exclamation-triangle me-1"></i>
+                                    warning
+                                </button>
+                                <button class="btn btn-danger m-1 text-capitalize">
+                                    <i class="fas fa-times me-1"></i>
+                                    Remove
+                                </button>
+                                <button class="btn btn-dark m-1 text-capitalize">
+                                    <i class="fas fa-caret-down me-1"></i> Dropdown
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Disabled button -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Disabled Buttons</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-primary m-1" disabled>
+                                    Primary
+                                </button>
+                                <button class="btn btn-secondary m-1" disabled>
+                                    secondary
+                                </button>
+                                <button class="btn btn-success m-1" disabled>success</button>
+                                <button class="btn btn-info m-1" disabled>info</button>
+                                <button class="btn btn-warning m-1" disabled>warning</button>
+                                <button class="btn btn-danger m-1" disabled>danger</button>
+                                <button class="btn btn-light m-1" disabled>light</button>
+                                <button class="btn btn-dark m-1" disabled>dark</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <!-- rounded button -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Rounded Buttons</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-primary m-1 rounded-pill">
+                                    Primary
+                                </button>
+                                <button class="btn btn-secondary m-1 rounded-pill">
+                                    secondary
+                                </button>
+                                <button class="btn btn-success m-1 rounded-pill">
+                                    success
+                                </button>
+                                <button class="btn btn-info m-1 rounded-pill">info</button>
+                                <button class="btn btn-warning m-1 rounded-pill">
+                                    warning
+                                </button>
+                                <button class="btn btn-danger m-1 rounded-pill">
+                                    danger
+                                </button>
+                                <button class="btn btn-light m-1 rounded-pill">light</button>
+                                <button class="btn btn-dark m-1 rounded-pill">dark</button>
+                            </div>
+                        </div>
+                        <!-- outline rounded button -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Outline Rounded Buttons</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-outline-primary m-1 rounded-pill">
+                                    Primary
+                                </button>
+                                <button class="btn btn-outline-secondary m-1 rounded-pill">
+                                    secondary
+                                </button>
+                                <button class="btn btn-outline-success m-1 rounded-pill">
+                                    success
+                                </button>
+                                <button class="btn btn-outline-info m-1 rounded-pill">
+                                    info
+                                </button>
+                                <button class="btn btn-outline-warning m-1 rounded-pill">
+                                    warning
+                                </button>
+                                <button class="btn btn-outline-danger m-1 rounded-pill">
+                                    danger
+                                </button>
+                                <button class="btn btn-outline-light m-1 rounded-pill">
+                                    light
+                                </button>
+                                <button class="btn btn-outline-dark m-1 rounded-pill">
+                                    dark
+                                </button>
+                            </div>
+                        </div>
+                        <!-- outline rounded button sizes -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Outline Button Sizes</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-outline-primary m-1 btn-lg">Large</button>
+                                <button class="btn btn-outline-secondary m-1">Medium</button>
+                                <button class="btn btn-outline-success m-1 btn-sm">Small</button>
+                            </div>
+                        </div>
+                        <!-- icon button -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Icon Buttons</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-primary m-1">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button class="btn btn-secondary m-1">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-success m-1">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn btn-warning m-1">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </button>
+                                <button class="btn btn-danger m-1">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <button class="btn btn-dark m-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="btn btn-secondary m-1">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-success m-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="btn btn-warning m-1">
+                                    <i class="fab fa-instagram"></i>
+                                </button>
+                                <button class="btn btn-danger m-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- rounded icon button -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Icon Buttons</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    Use Bootstrap's custom button styles for actions in forms,
+                                    dialogs, and more with support for multiple sizes, states,
+                                    and more
+                                </p>
+                                <button class="btn btn-primary m-1 rounded-circle">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                                <button class="btn btn-secondary m-1 rounded-circle">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-success m-1 rounded-circle">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="btn btn-warning m-1 rounded-circle">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </button>
+                                <button class="btn btn-danger m-1 rounded-circle">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <button class="btn btn-dark m-1 rounded-circle">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                <button class="btn btn-secondary m-1 rounded-circle">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="btn btn-success m-1 rounded-circle">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="btn btn-warning m-1 rounded-circle">
+                                    <i class="fab fa-instagram"></i>
+                                </button>
+                                <button class="btn btn-danger m-1 rounded-circle">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Content -->
+        </div>
+        <!-- Page Content  -->
+    </div>
+
+    <!-- Initial  Javascript -->
+    <script src="../lib/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="../lib/bootstrap_5/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    template name:{{dataments}}
+    template url:{{https://www.designtocodes.com/product/dataments-free-bootstrap-admin-dashboard-template/}}
+    description:{{unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.}}
+    author: designtocodes 
+    author url: https://www.designtocodes.com 
+    text domain:{{dataments}}
+-->

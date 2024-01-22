@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo/logo-sm.png" type="image/gif" sizes="16x16">
+    <title>Email</title>
+    <meta name="og:description" content="unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" property="og:title" content="dataments - free bootstrap admin dashboard template">
+    <meta property="og:image" content="#">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../lib/bootstrap_5/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="../lib/fontawesome/css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="d2c_wrapper">
+        <!-- sidebar -->
+        <div class="d2c_sidebar rounded-4 px-4 py-4 py-md-4 m-4 me-0" id="sidebar">
+            <div class="d-flex flex-column h-100">
+                <a href="../index.html" class="mb-0 brand-icon">
+                    <img class="navbar-brand w-100" src="../assets/images/logo/logo.png" alt="logo">
+                </a>
+                <hr class="divider">
+                <ul class="navbar-nav flex-grow-1" id="d2c_Sidebar">
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home me-2"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#app" aria-expanded="true" href="#">
+                            <i class="fas fa-layer-group me-2"></i>
+                            <span>App</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3 show" id="app" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link active" href="../components/email.html">Email</a>
+                            </li>
+                             
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chat.html">Chat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/notifications.html">Notification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/calender.html">Calender</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/invoice.html">Invoice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/create_invoice.html">Create Invoice</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../components/widget.html">
+                            <i class="fas fa-list me-2"></i>
+                            <span>Widget</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#charts" aria-expanded="false" href="#">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            <span>Charts</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="charts" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/apexchart.html">ApexChart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chartjs.html">ChartJs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/amcharts.html">Amcharts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#form" aria-expanded="false"
+                            href="#">
+                            <i class="fab fa-wpforms me-2"></i>
+                            <span>Form</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="form" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basicform.html">Basic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/advancedform.html">Advance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-table me-2"></i>
+                            <span>Table</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="table" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basictable.html">Basic Table</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/datatable.html">Data Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#userPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-users me-2"></i>
+                            <span>User Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="userPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/signin.html">Sing In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/sign_up.html">Sing Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/forget.html">Forget Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/lockscreen.html">Lock Screen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/profile.html">User Profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#uiComponents"
+                            aria-expanded="false" href="#">
+                            <i class="fas fa-th me-2"></i>
+                            <span>UI Components</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="uiComponents" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/icon.html">Icon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/button.html">Button</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/progressbar.html">Progress Bar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/pagination.html">Pagination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/cards.html">Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/slider.html">Slider</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/dropdown.html">Dropdown</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/modal.html">Modal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/timeline.html">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/tabs.html">Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/breadcrumbs.html">Breadcrumbs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/colorpalettes.html">Color Palette</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/map.html">Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#extraPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-file-alt me-2"></i>
+                            <span>Extra Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="extraPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/blank.html">Blank Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/404.html">404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/500.html">500</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/documentation.html">
+                            <i class="fas fa-book-open me-2"></i>
+                            <span>Documentation</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                </ul>
+
+                <hr class="divider">
+
+                <!-- Sidebar: Profile -->
+                <div class="sidebar-mini-btn text-light">
+                    <div class="dropdown">
+                        <a class="dropdown-closer" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                             <img class="img-profile rounded-circle object-fit-cover border border-2 border-white me-2"
+                                src="../assets/images/avatar/man-4.png" alt="avatar" width="30" height="30">
+                            <span>Robert Smith</span>
+                        </a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu shadow border-0 end-0 start rounded-3">
+                            <a class="dropdown-item" href="../pages/profile.html">
+                                <i class="fas fa-user fa-fw me-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-comment-alt fa-fw me-2 text-gray-400"></i>
+                                Message
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cog fa-fw me-2 text-gray-400"></i>
+                                Profile Setting
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-fw me-2 text-gray-400"></i>
+                                Logout
+                            </a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar: Profile -->
+            </div>
+        </div>
+
+        <!-- main body area -->
+        <div class="d2c_main px-lg-4 px-md-4 px-3">
+            <!-- Top Nav -->
+            <nav class="navbar navbar-expand navbar-light sticky-top bg-white shadow py-2 px-3 rounded-4 d2c_top_navbar my-4">
+                <!-- Sidebar toggler -->
+                <button type="button" id="sidebarCollapse"
+                    class="btn btn-transparent text-info d2c_sidebar_collapse me-1">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Sidebar toggler -->
+                <div>
+                    <!-- Search Form -->
+                    <form class="form d2c_nav_form me-3 d-none d-md-flex" role="search">
+                        <div class="input-group">
+                            <button class="btn btn-outline-info rounded-end rounded-pill border-end-0" type="submit">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                            <input class="form-control border-start-0 rounded-start rounded-pill" type="search"
+                                placeholder="Search..." aria-label="Search" required>
+                        </div>
+                    </form>
+                    <!-- Search Form: Nav Item -->
+                    <div class="d-flex d-md-none">
+                        <!-- Search Box: Nav Item -->
+                        <a class="nav-link text-info" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-search fa-sm"></i>
+                        </a>
+
+                        <ul class="dropdown-menu p-0 mt-0 border-0 rounded-pill">
+                            <li>
+                                <form class="form d2c_nav_form" role="search">
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-info rounded-end rounded-pill border-end-0"
+                                            type="submit">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                        <input class="form-control border-start-0 rounded-start rounded-pill"
+                                            type="search" placeholder="Search..." aria-label="Search" required>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search Form: Nav Item -->
+
+                <ul class="navbar-nav align-items-center mb-lg-0 ms-auto">
+                    <!-- Notification: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link text-info p-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bell fa-fw"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-secondary border rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow border-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Notifications</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>19 sec ago</small></p>
+                                    <h6 class="mb-0">Hi there! I am wondering if you can help me with a problem I've been having.</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>2 min ago</small></p>
+                                    <h6 class="mb-0">
+                                        I have the photos that you ordered last month, how would
+                                        you like them sent to you?
+                                    </h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>3 min ago</small></p>
+                                    <h6 class="mb-0">Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>4 min ago</small></p>
+                                    <h6 class="mb-0">Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../pages/notifications.html">See All
+                                Notifications</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+
+                    </li>
+                    <!-- Notification: Nav Item -->
+
+                    <!-- MailBox: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link position-relative text-info p-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu shadow border-0 end-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Mail</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-1.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>3 min ago</small></p>
+                                        Hi there! I am wondering if you can help me with a
+                                        problem I've been having.
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-2.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>4 min ago</small></p>
+                                        I have the photos that you ordered last month, how would you like them sent to you?
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-3.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>6 min ago</small></p>
+                                        Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-4.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>10 min ago</small></p>
+                                        Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../components/email.html">See All Mail</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </li>
+                    <!-- MailBox: Nav Item -->
+                </ul>
+            </nav>
+            <!-- Top Nav -->
+
+            <!-- Body: Body -->
+            <div class="body">
+                <h5 class="text-info">Email</h5>
+                <!-- Breadcrumb item -->
+                <nav class="mb-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb d2c_global_breadcrumbs">
+                        <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home"></i></a></li>
+                         
+                        <li class="breadcrumb-item active" aria-current="page">Email</li>
+                    </ol>
+                </nav>
+                <!-- Breadcrumb item -->
+
+                <!-- Mail Box -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row d2c_mail_tab">
+                                    <!-- Tab Nav -->
+                                    <div class="col-md-4 col-xl-2 mb-4 mb-md-0 border-last">
+                                         
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                            aria-orientation="vertical">
+                                            <button class="nav-link btn btn-primary rounded-pill w-100 d2c_compose_btn text-white text-center mb-3" id="v-pills-compose-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-compose" type="button" role="tab"
+                                                aria-controls="v-pills-compose" aria-selected="true">
+                                                <span class="text-white">
+                                                    Compose
+                                                </span>
+                                            </button>
+                                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-home" type="button" role="tab"
+                                                aria-controls="v-pills-home" aria-selected="true">
+                                                <span>
+                                                    <i class="fas fa-envelope-open-text me-2"></i>
+                                                    Inbox
+                                                </span>
+                                                <span>(20)</span>
+                                            </button>
+                                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                                aria-controls="v-pills-profile" aria-selected="false">
+                                                <span>
+                                                    <i class="fas fa-file me-2"></i>
+                                                    Draft
+                                                </span>
+                                            </button>
+                                            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-disabled" type="button" role="tab"
+                                                aria-controls="v-pills-disabled" aria-selected="false">
+                                                <span>
+                                                    <i class="fas fa-paper-plane me-2"></i>
+                                                    Sent Mail
+                                                </span>
+                                            </button>
+                                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                                aria-controls="v-pills-messages" aria-selected="false">
+                                                <span>
+                                                    <i class="fas fa-exclamation-circle me-2"></i>
+                                                    Spam/Junk
+                                                </span>
+                                            </button>
+                                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                                aria-controls="v-pills-settings" aria-selected="false">
+                                                <span>
+                                                    <i class="fas fa-trash me-2"></i>
+                                                    Trash
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Tab Nav -->
+
+                                    <!-- Tab Content -->
+                                    <div class="col-md-8 col-xl-10">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                                                <div class="d2c_mail_nav d-flex align-items-center justify-content-between mb-4">
+                                                    <div class="d-inline-flex align-items-center">
+                                                        <!-- Select All -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="inboxSelectAll">
+                                                            <label class="form-check-label" for="inboxSelectAll">
+                                                                Select All
+                                                            </label>
+                                                        </div>
+                                                        <!-- Select All -->
+                                                        <!-- Refresh -->
+                                                        <button class="btn p-2">
+                                                            <i class="fas fa-redo-alt"></i>
+                                                        </button>
+                                                        <!-- Refresh -->
+                                                        <!-- Delete -->
+                                                        <button class="btn p-2">
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                        <!-- Delete -->
+                                                    </div>
+                                                    <div class="d-inline-flex align-items-center">
+                                                        <!-- Search -->
+                                                        <div class="input-group d-none d-md-flex">
+                                                            <button
+                                                                class="btn btn-outline-dark border-end-0 rounded-pill rounded-end"
+                                                                type="submit">
+                                                                <i class="fas fa-search fa-sm"></i>
+                                                            </button>
+                                                            <input
+                                                                class="form-control border-start-0 border-dark rounded-pill rounded-start"
+                                                                type="search" placeholder="Search Email"
+                                                                aria-label="Search" required>
+                                                        </div>
+                                                        <!-- Search -->
+
+                                                        <!-- Arrow -->
+                                                        <div class="d2c_nav_arrow ms-2">
+                                                            <button class="btn p-2">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </button>
+                                                            <button class="btn p-2">
+                                                                <i class="fas fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                        <!-- Arrow -->
+                                                    </div>
+                                                </div>
+
+                                                <!-- Data Table -->
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-hover">
+                                                        <tbody>
+                                                            <tr class="table-active">
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td class="active">
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td><a href="open_mail.html">Walter Reuter</a></td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- Data Table -->
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                                <div
+                                                    class="d2c_mail_nav d-flex align-items-center justify-content-between mb-4">
+                                                    <div class="d-inline-flex align-items-center">
+                                                        <!-- Select All -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="draftInboxSelect">
+                                                            <label class="form-check-label" for="draftInboxSelect">
+                                                                Select All
+                                                            </label>
+                                                        </div>
+                                                        <!-- Select All -->
+                                                        <!-- Refresh -->
+                                                        <button class="btn p-2">
+                                                            <i class="fas fa-redo-alt"></i>
+                                                        </button>
+                                                        <!-- Refresh -->
+                                                        <!-- Delete -->
+                                                        <button class="btn p-2">
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                        <!-- Delete -->
+                                                    </div>
+                                                    <div class="d-inline-flex align-items-center">
+                                                        <!-- Arrow -->
+                                                        <div class="d2c_nav_arrow ms-2">
+                                                            <button class="btn p-2">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </button>
+                                                            <button class="btn p-2">
+                                                                <i class="fas fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                        <!-- Arrow -->
+                                                    </div>
+                                                </div>
+                                                <!-- Draft Data Table -->
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-hover">
+                                                        <tbody>
+                                                            <tr class="table-active">
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="text-secondary"
+                                                                        href="open_mail.html">Draft</a>
+                                                                </td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- Draft Data Table -->
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                                                aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                                                <div
+                                                    class="d2c_mail_nav d-flex align-items-center justify-content-between mb-4">
+                                                    <div class="d-inline-flex align-items-center">
+                                                        <!-- Select All -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="selectAllCheck">
+                                                            <label class="form-check-label" for="selectAllCheck">
+                                                                Select All
+                                                            </label>
+                                                        </div>
+                                                        <!-- Select All -->
+                                                        <!-- Refresh -->
+                                                        <button class="btn p-2">
+                                                            <i class="fas fa-redo-alt"></i>
+                                                        </button>
+                                                        <!-- Refresh -->
+                                                        <!-- Delete -->
+                                                        <button class="btn p-2">
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                        <!-- Delete -->
+                                                    </div>
+                                                    <div class="d-inline-flex align-items-center">
+                                                        <!-- Arrow -->
+                                                        <div class="d2c_nav_arrow ms-2">
+                                                            <button class="btn p-2">
+                                                                <i class="fas fa-chevron-left"></i>
+                                                            </button>
+                                                            <button class="btn p-2">
+                                                                <i class="fas fa-chevron-right"></i>
+                                                            </button>
+                                                        </div>
+                                                        <!-- Arrow -->
+                                                    </div>
+                                                </div>
+                                                <!-- Sent Mail Data Table -->
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-hover">
+                                                        <tbody>
+                                                            <tr class="table-active">
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement belting with
+                                                                        double - Duis nec ligula sed augue consequat
+                                                                        mattis sed egat urna, gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="control-group">
+                                                                        <label class="control control-checkbox">
+                                                                            <input type="checkbox">
+                                                                            <span class="control_indicator"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <button class="btn active">
+                                                                        <i class="far fa-star"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>To: Esther Howard</td>
+                                                                <td>
+                                                                    <a class="d2c_mail_subject"
+                                                                        href="open_mail.html">Statement
+                                                                        belting with double - Duis nec ligula
+                                                                        sed augue consequat mattis sed egat urna,
+                                                                        gravida id orci in...</a>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="btn d2c_archive">
+                                                                        <i class="fas fa-archive"></i>
+                                                                    </button>
+                                                                    <button class="btn d2c_trash">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- Sent Mail Data Table -->
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                                aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                                <div class="text-center">
+                                                    <p>No Item Found!</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                                aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                                <div class="text-center">
+                                                    <p>No Item Found!</p>
+                                                </div>
+                                            </div>
+                                            <!-- compose tab -->
+                                            <div class="tab-pane fade" id="v-pills-compose" role="tabpanel"
+                                                aria-labelledby="v-pills-compose-tab" tabindex="0">
+                                                <form class="d2c_compose_mail needs-validation" novalidate>
+                                                    <div>
+                                                        <input type="email" class="form-control" placeholder="To:" required>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" class="form-control" placeholder="Subject:" required>
+                                                    </div>
+                                                    <div>
+                                                        <textarea class="form-control" placeholder="Enter your message:" rows="7" required></textarea>
+                                                    </div>
+
+                                                    <div class="file-uploader__message-area"></div>
+                                                    <div class="d-inline-flex align-items-center mt-3">
+                                                        <button type="submit" class="btn btn-primary">Send Now</button>
+                                                        <div class="file-chooser">
+                                                            <label for="file-upload" title="file upload"><i class="fas fa-paperclip"></i></label>
+                                                            <input id="file-upload" class="file-chooser__input" type="file" multiple hidden>
+                                                        </div>
+                                                        <div>
+                                                            <i class="fas fa-link"></i>
+                                                        </div>
+                                                        <div>
+                                                            <i title="emoji" class="fas fa-smile"></i>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Tab Content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mail Box -->
+                </div>
+                <!-- Main Content -->
+            </div>
+        </div>
+        <!-- Page Content  -->
+    </div>
+
+    <!-- Initial  Javascript -->
+    <script src="../lib/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="../lib/bootstrap_5/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    template name:{{dataments}}
+    template url:{{https://www.designtocodes.com/product/dataments-free-bootstrap-admin-dashboard-template/}}
+    description:{{unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.}}
+    author: designtocodes 
+    author url: https://www.designtocodes.com 
+    text domain:{{dataments}}
+-->

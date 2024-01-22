@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/logo/logo-sm.png" type="image/gif" sizes="16x16">
+    <title>Widgets</title>
+    <meta name="og:description" content="unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" property="og:title" content="dataments - free bootstrap admin dashboard template">
+    <meta property="og:image" content="#">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../lib/bootstrap_5/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <!-- main css -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="d2c_wrapper">
+
+        <!-- sidebar -->
+        <div class="d2c_sidebar rounded-4 px-4 py-4 py-md-4 m-4 me-0" id="sidebar">
+            <div class="d-flex flex-column h-100">
+                <a href="../index.html" class="mb-0 brand-icon">
+                    <img class="navbar-brand w-100" src="../assets/images/logo/logo.png" alt="logo">
+                </a>
+                <hr class="divider">
+                <ul class="navbar-nav flex-grow-1" id="d2c_Sidebar">
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="fas fa-home me-2"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#app" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-layer-group me-2"></i>
+                            <span>App</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="app" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/email.html">Email</a>
+                            </li>
+                             
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chat.html">Chat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/notifications.html">Notification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/calender.html">Calender</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/invoice.html">Invoice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/create_invoice.html">Create Invoice</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../components/widget.html">
+                            <i class="fas fa-list me-2"></i>
+                            <span>Widget</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#charts" aria-expanded="false" href="#">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            <span>Charts</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="charts" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/apexchart.html">ApexChart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/chartjs.html">ChartJs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/amcharts.html">AmCharts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#form" aria-expanded="false"
+                            href="#">
+                            <i class="fab fa-wpforms me-2"></i>
+                            <span>Form</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="form" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basicform.html">Basic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/advancedform.html">Advance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-table me-2"></i>
+                            <span>Table</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="table" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/basictable.html">Basic Table</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/datatable.html">Data Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#userPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-users me-2"></i>
+                            <span>User Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="userPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/signin.html">Sing In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/sign_up.html">Sing Up</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/forget.html">Forget Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/lockscreen.html">Lock Screen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/profile.html">User Profile</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#uiComponents"
+                            aria-expanded="false" href="#">
+                            <i class="fas fa-th me-2"></i>
+                            <span>UI Components</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="uiComponents" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/icon.html">Icon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/button.html">Button</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/progressbar.html">Progress Bar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/pagination.html">Pagination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/cards.html">Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/slider.html">Slider</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/dropdown.html">Dropdown</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/modal.html">Modal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/timeline.html">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/tabs.html">Tab</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/breadcrumbs.html">Breadcrumbs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/colorpalettes.html">Color Palette</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../components/map.html">Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Dropdown: Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#extraPages" aria-expanded="false"
+                            href="#">
+                            <i class="fas fa-file-alt me-2"></i>
+                            <span>Extra Pages</span>
+                            <span class="fas fa-chevron-right ms-auto text-end"></span>
+                        </a>
+                        <!-- Menu: Sub menu ul -->
+                        <ul class="sub-menu collapse rounded-3" id="extraPages" data-bs-parent="#d2c_Sidebar">
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/blank.html">Blank Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/404.html">404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="sub-menu-link" href="../pages/500.html">500</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown: Menu Item -->
+
+                    <!-- Menu Item -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/documentation.html">
+                            <i class="fas fa-book-open me-2"></i>
+                            <span>Documentation</span>
+                        </a>
+                    </li>
+                    <!-- Menu Item -->
+
+                </ul>
+
+                <hr class="divider">
+
+                <!-- Sidebar: Profile -->
+                <div class="sidebar-mini-btn text-light">
+                    <div class="dropdown">
+                        <a class="dropdown-closer" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                             <img class="img-profile rounded-circle object-fit-cover border border-2 border-white me-2"
+                                src="../assets/images/avatar/man-4.png" alt="avatar" width="30" height="30">
+                            <span>Robar Smith</span>
+                        </a>
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu shadow border-0 end-0 start rounded-3">
+                            <a class="dropdown-item" href="../pages/profile.html">
+                                <i class="fas fa-user fa-fw me-2 text-gray-400"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-comment-alt fa-fw me-2 text-gray-400"></i>
+                                Message
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cog fa-fw me-2 text-gray-400"></i>
+                                Profile Setting
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-fw me-2 text-gray-400"></i>
+                                Logout
+                            </a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar: Profile -->
+            </div>
+        </div>
+
+        <!-- Page Content  -->
+        <div class="d2c_main px-lg-4 px-md-4 px-3">
+
+            <!-- Top Nav -->
+            <nav
+                class="navbar navbar-expand navbar-light sticky-top bg-white shadow py-2 px-3 rounded-4 d2c_top_navbar my-4">
+                <!-- Sidebar toggler -->
+                <button type="button" id="sidebarCollapse"
+                    class="btn btn-transparent text-info d2c_sidebar_collapse me-1">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- Sidebar toggler -->
+                <div>
+                    <!-- Search Form -->
+                    <form class="form d2c_nav_form me-3 d-none d-md-flex" role="search">
+                        <div class="input-group">
+                            <button class="btn btn-outline-info rounded-end rounded-pill border-end-0" type="submit">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                            <input class="form-control border-start-0 rounded-start rounded-pill" type="search"
+                                placeholder="Search..." aria-label="Search" required>
+                        </div>
+                    </form>
+                    <!-- Search Form: Nav Item -->
+                    <div class="d-flex d-md-none">
+                        <!-- Search Box: Nav Item -->
+                        <a class="nav-link text-info" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-search fa-sm"></i>
+                        </a>
+
+                        <ul class="dropdown-menu p-0 mt-0 border-0 rounded-pill">
+                            <li>
+                                <form class="form d2c_nav_form" role="search">
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-info rounded-end rounded-pill border-end-0"
+                                            type="submit">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                        <input class="form-control border-start-0 rounded-start rounded-pill"
+                                            type="search" placeholder="Search..." aria-label="Search" required>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Search Form: Nav Item -->
+
+                <ul class="navbar-nav align-items-center mb-lg-0 ms-auto">
+                    <!-- Notification: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link text-info p-0" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-bell fa-fw"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-secondary border rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow border-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Notifications</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>19 sec ago</small></p>
+                                    <h6 class="mb-0">Hi there! I am wondering if you can help me with a problem I've been having.</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>2 min ago</small></p>
+                                    <h6 class="mb-0">
+                                        I have the photos that you ordered last month, how would
+                                        you like them sent to you?
+                                    </h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>3 min ago</small></p>
+                                    <h6 class="mb-0">Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                                <div class="text-truncate d-block">
+                                    <p class="mb-0"><small>4 min ago</small></p>
+                                    <h6 class="mb-0">Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../pages/notifications.html">See All
+                                Notifications</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+
+                    </li>
+                    <!-- Notification: Nav Item -->
+
+                    <!-- MailBox: Nav Item -->
+                    <li class="nav-item d2c_dropdown_right dropdown me-3">
+                        <a class="nav-link position-relative text-info p-0" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu shadow border-0 end-0 py-0 mt-3">
+                            <h6 class="dropdown-header text-white bg-info rounded-top py-3">Mail</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-1.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>3 min ago</small></p>
+                                        Hi there! I am wondering if you can help me with a
+                                        problem I've been having.
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-2.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>4 min ago</small></p>
+                                        I have the photos that you ordered last month, how would you like them sent to you?
+                                    </div>
+                                    
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-3.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>6 min ago</small></p>
+                                        Last month's report looks great, I am very happy with
+                                        the progress so far, keep up the good work!
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="../components/open_mail.html">
+                                <div class="text-truncate">
+                                    <div>
+                                        <img src="../assets/images/avatar/man-4.png" class="d2c_mail_avatar" alt="profile avatar">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0"><small>10 min ago</small></p>
+                                        Am I a good boy? The reason I ask is because someone
+                                        told me that people say this to all dogs, even if they
+                                        aren't good...
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500 py-2"
+                                href="../components/email.html">See All Mail</a>
+
+                            <div class="dropdown-arrow bg-info"></div>
+                        </div>
+                    </li>
+                    <!-- MailBox: Nav Item -->
+                </ul>
+            </nav>
+            <!-- Top Nav -->
+
+            <!-- Main Content -->
+            <div class="body">
+
+                <h5 class="text-info">Widgets</h5>
+                <!-- Breadcrumb item -->
+                <nav class="mb-3" aria-label="breadcrumb">
+                    <ol class="breadcrumb d2c_global_breadcrumbs">
+                        <li class="breadcrumb-item"><a href="../index.html"><i class="fas fa-home"></i></a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Widgets</li>
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <div class="col-lg-6 col-xxl">
+                        <div class="card d2c_small_profile_card">
+                            <div class="p-0">
+                                <img src="../assets/images/profile_info_bg_1.jpg" class="w-100 d2c_user_bg"
+                                    alt="profile info bg">
+                                <div class="d2c_user_info text-center">
+                                    <img src="../assets/images/profile_image_1.jpg" class="d2c_user_profile_img"
+                                        alt="User image">
+                                    <h5 class="text-secondary user_name mb-1">Leslie Alexander</h5>
+                                    <p class="d2c_user_role text-muted mb-1">Designer</p>
+                                    <p class="text-info mb-0">lesliealexander@D2C.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="d2c_profile_card d2c_box d-flex align-items-center mb-4">
+                            <img src="../assets/images/profile_image_2.jpg" class="d2c_profile_image me-3"
+                                alt="profile image">
+                            <div>
+                                <h5 class="mb-1">Brooklyn Simmons</h5>
+                                <p class="text-muted">brooklynsimmons@D2C.com</p>
+                                <p class="text-info mb-0 fw-semibold">Tester</p>
+                            </div>
+                        </div>
+                        <div class="d2c_profile_card d2c_box d-flex align-items-center mb-4">
+                            <img src="../assets/images/profile_image_3.jpg" class="d2c_profile_image me-3"
+                                alt="profile image">
+                            <div>
+                                <h5 class="mb-1">Leslie Alexander</h5>
+                                <p class="text-muted">lesliealexander@D2C.com</p>
+                                <p class="text-info mb-0 fw-semibold">Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-5">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Sales</h5>
+                            </div>
+                            <div class="card-body d2c_sales">
+                                <!-- revenue -->
+                                <div class="row mb-5">
+                                    <div class="col-8">
+                                        <h2 class="text-primary">$17,400</h2>
+                                        <p class="mb-0 text-secondary">Total Revenue</p>
+                                    </div>
+                                    <div class="col text-end d2c_sales">
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle text-info" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Monthly
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Yearly</a></li>
+                                                <li><a class="dropdown-item" href="#">Weekly</a></li>
+                                                <li><a class="dropdown-item" href="#">Day</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <h4 class="text-primary fw-semibold">472</h4>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="mb-0 text-secondary">Deals Add</p>
+                                            <p class="mb-0 text-primary fw-semibold">70%</p>
+                                        </div>
+                                        <div class="progress mt-3" style="height: 10px;">
+                                            <div class="progress-bar bg-primary rounded-pill progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 70%" aria-valuenow="70"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg">
+                                        <div class="col-lg">
+                                            <h4 class="text-primary fw-semibold mt-3 mt-lg-0">89</h4>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="mb-0 text-secondary">Deals Won</p>
+                                                <p class="mb-0 text-primary fw-semibold">60%</p>
+                                            </div>
+                                            <div class="progress mt-3 bg-light" style="height: 10px;">
+                                                <div class="progress-bar bg-info rounded-pill progress-bar-striped progress-bar-animated"
+                                                    role="progressbar" style="width: 60%" aria-valuenow="60"
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- card -->
+                    <div class="col-lg-6 col-xl-6 col-xxl-4">
+                        <div class="card d2c_card_1">
+                            <img src="../assets/images/post_card_image_1.jpg" class="card-img-top w-100"
+                                alt="post card image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#" class="text-secondary">You Will Thank Us - 10 Tips
+                                        About SALE You Need To Know</a></h5>
+                                <p class="card-text">Store and access information on a device. Personalized.
+                                    Personalized content. Ad and content measurement.</p>
+                                <a href="#" class="btn btn-outline-primary rounded-pill">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- customers card -->
+                    <div class="col-lg-6 col-xl-6 col-xxl-4">
+                        <div class="card d2c_customers_card">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0 text-capitalize">New Customers</h5>
+                                <div class="d-flex align-items-center">
+                                    <a href="#"><i class="fas fa-sync-alt text-muted"></i></a>
+                                    <div class="dropdown">
+                                        <button class="btn pe-0 d2c_header_dropdown text-muted" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body table-responsive">
+                                <table class="table table-borderless mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="../assets/images/customers_1.jpg" alt="customers pictures">
+                                            </td>
+                                            <td class="text-secondary">
+                                                Cameron Williamson
+                                                <p class="mb-0 text-muted fw-normal">@cameron.oi</p>
+                                            </td>
+                                            <td class="text-muted fw-normal">2 Orders</td>
+                                            <td class="text-info">$150.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../assets/images/customers_2.jpg" alt="customers pictures">
+                                            </td>
+                                            <td class="text-secondary">
+                                                Walter Reuter
+                                                <p class="mb-0 text-muted fw-normal">@walter.oi</p>
+                                            </td>
+                                            <td class="text-muted fw-normal">1 Orders</td>
+                                            <td class="text-info">$100.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../assets/images/customers_3.jpg" alt="customers pictures">
+                                            </td>
+                                            <td class="text-secondary">
+                                                Larissa Gebhardt
+                                                <p class="mb-0 text-muted fw-normal">@larissa.oi</p>
+                                            </td>
+                                            <td class="text-muted fw-normal">5 Orders</td>
+                                            <td class="text-info">$350.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../assets/images/customers_4.jpg" alt="customers pictures">
+                                            </td>
+                                            <td class="text-secondary">
+                                                Albrecht Straub
+                                                <p class="mb-0 text-muted fw-normal">@albrecht.oi</p>
+                                            </td>
+                                            <td class="text-muted fw-normal">3 Orders</td>
+                                            <td class="text-info">$200.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../assets/images/customers_5.jpg" alt="customers pictures">
+                                            </td>
+                                            <td class="text-secondary">
+                                                Leopold Ebert
+                                                <p class="mb-0 text-muted fw-normal">@leopold.oi</p>
+                                            </td>
+                                            <td class="text-muted fw-normal">2 Orders</td>
+                                            <td class="text-info">$150.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- latest notification card -->
+                    <div class="col-lg-6 col-xl-6 col-xxl-4">
+                        <div class="card d2c_customers_card">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <h5 class="mb-0 text-capitalize">Latest Notifications</h5>
+                                <div class="d-flex align-items-center">
+                                    <a href="#"><i class="fas fa-sync-alt text-muted"></i></a>
+                                    <div class="dropdown">
+                                        <button class="btn pe-0 d2c_header_dropdown text-muted" type="button"
+                                            id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-responsive table-borderless d2c_notification_table mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td><span
+                                                    class="d2c_card_icon rounded-circle text-white align-items-center justify-content-center bg-primary"><i
+                                                        class="fas fa-shopping-basket"></i></span></td>
+                                            <td class="text-secondary">
+                                                New Order
+                                                <p class="mb-0 text-muted fw-normal">Selena has placed an new order</p>
+                                            </td>
+                                            <td class="text-info">10 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span
+                                                    class="d2c_card_icon rounded-circle text-white align-items-center justify-content-center bg-info"><i
+                                                        class="fas fa-envelope-open-text"></i></span></td>
+                                            <td class="text-secondary">
+                                                New Enquiry
+                                                <p class="mb-0 text-muted fw-normal">Phileine has placed an new order
+                                                </p>
+                                            </td>
+                                            <td class="text-info">08 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span
+                                                    class="d2c_card_icon rounded-circle text-white align-items-center justify-content-center bg-secondary"><i
+                                                        class="fas fa-file"></i></span></td>
+                                            <td class="text-secondary">
+                                                Support Ticket
+                                                <p class="mb-0 text-muted fw-normal">Emma has placed an new order</p>
+                                            </td>
+                                            <td class="text-info">10 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span
+                                                    class="d2c_card_icon rounded-circle text-white align-items-center justify-content-center bg-danger"><i
+                                                        class="fas fa-shopping-cart"></i></span></td>
+                                            <td class="text-secondary">
+                                                New order
+                                                <p class="mb-0 text-muted fw-normal">Ryan has placed an new order</p>
+                                            </td>
+                                            <td class="text-info">09 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span
+                                                    class="d2c_card_icon rounded-circle text-white align-items-center justify-content-center bg-dark"><i
+                                                        class="fas fa-industry"></i></span></td>
+                                            <td class="text-secondary">
+                                                Company Meetup
+                                                <p class="mb-0 text-muted fw-normal">Phileine has placed an new order
+                                                </p>
+                                            </td>
+                                            <td class="text-info">08 AM</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- todo list card -->
+                    <div class="col-lg-6 col-xl-6 col-xxl-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Todo List</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="#">
+                                    <div class="d2c_todo_item">
+                                        <div class="form-check mb-0">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label fw-normal text-muted"
+                                                for="exampleCheck1">Pick up kids from school</label>
+                                        </div>
+                                    </div>
+                                    <div class="d2c_todo_item">
+                                        <div class="form-check mb-0">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck2" checked>
+                                            <label class="form-check-label fw-normal text-muted"
+                                                for="exampleCheck2">Pick up kids from school</label>
+                                        </div>
+                                    </div>
+                                    <div class="d2c_todo_item">
+                                        <div class="form-check mb-0">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                                            <label class="form-check-label fw-normal text-muted"
+                                                for="exampleCheck3">Pick up kids from school</label>
+                                        </div>
+                                    </div>
+                                    <div class="d2c_todo_item">
+                                        <div class="form-check mb-0">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                                            <label class="form-check-label fw-normal text-muted"
+                                                for="exampleCheck4">Pick up kids from school</label>
+                                        </div>
+                                    </div>
+                                    <div class="d2c_todo_item">
+                                        <div class="form-check mb-0">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                                            <label class="form-check-label fw-normal text-muted"
+                                                for="exampleCheck5">Pick up kids from school</label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- input add todo list form -->
+                                <form action="#" class="d2c_todo_form">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control rounded"
+                                            placeholder="What do you need to do today?" required>
+                                        <button class="input-group-text ms-1 rounded">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- task card -->
+                    <div class="col-lg-6 col-xl-6 col-xxl-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Tasks</h5>
+                            </div>
+                            <div class="card-body">
+                                <form action="#">
+                                    <div class="d2c_task_wrapper">
+                                        <div class="form-check pb-2 position-relative">
+                                            <input type="checkbox" class="form-check-input rounded-circle"
+                                                id="exampleCheck6" checked>
+                                            <label class="form-check-label d-block fw-normal text-muted"
+                                                for="exampleCheck6">8:30</label>
+                                            <label class="mb-0 text-secondary" for="exampleCheck6">Call to customer <a
+                                                    href="../pages/profile.html" class="text-primary">Jacob</a> &
+                                                discuss the detail about the.</label>
+                                        </div>
+                                        <div class="form-check pb-2 position-relative">
+                                            <input type="checkbox" class="form-check-input rounded-circle"
+                                                id="exampleCheck7">
+                                            <label class="form-check-label d-block fw-normal text-muted"
+                                                for="exampleCheck7">Sat, 5 Mar</label>
+                                            <label class="mb-0 text-secondary" for="exampleCheck7">Prepare for
+                                                presentation</label>
+                                        </div>
+                                        <div class="form-check pb-2 position-relative">
+                                            <input type="checkbox" class="form-check-input rounded-circle"
+                                                id="exampleCheck8">
+                                            <label class="form-check-label d-block fw-normal text-muted"
+                                                for="exampleCheck8">Sun, 11 Feb</label>
+                                            <label class="mb-0 text-secondary" for="exampleCheck8">Call to customer <a
+                                                    href="../pages/profile.html" class="text-primary">Jessi</a> assign
+                                                you a task <a href="#" class="text-primary">Mockup Design</a>.</label>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <form action="#" class="pt-4">
+                                    <textarea cols="30" rows="2" class="form-control" placeholder="Task Details"
+                                        required></textarea>
+                                    <button class="btn btn-primary text-white mt-3">Add Task</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- area chart -->
+                    <div class="col-lg-6 col-xl-6 col-xxl-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0 text-capitalize">Last 7 Month</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="area-Chart-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Content -->
+
+        </div><!-- Page Content  -->
+    </div>
+
+
+    <!-- Initial  Javascript -->
+    <script src="../lib/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="../lib/bootstrap_5/bootstrap.bundle.min.js"></script>
+
+    <!-- apexChart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- custom js -->
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+        // Area Chart
+        function d2c_areaChart_5() {
+            var options = {
+                series: [
+                    {
+                        name: 'Revenue',
+                        data: [40, 60, 40, 56, 35, 65, 30],
+                    },
+                ],
+                chart: {
+                    type: 'area',
+                    height: 350,
+                    stacked: true,
+                    toolbar: {
+                        show: true,
+                    }
+                },
+                colors: ['rgba(111, 106, 248, 0.8)'],
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    show: false,
+                    curve: 'straight'
+                },
+                fill: {
+                    type: 'gradient',
+                    gradient: {
+                        opacityFrom: 1,
+                        opacityTo: 1,
+                    }
+                },
+                grid: {
+                    show: false,
+                    padding: {
+                        top: 0,
+                        right: 0,
+                        bottom: 0,
+                        left: 0
+                    },
+                },
+                xaxis: {
+                    labels: {
+                        show: false,
+                    },
+                    axisTicks: {
+                        show: false,
+                    }
+                },
+                yaxis: {
+                    labels: {
+                        show: false,
+                    },
+                    axisTicks: {
+                        show: false,
+                    }
+                },
+            };
+
+            var chart = new ApexCharts(document.querySelector("#area-Chart-5"), options);
+            chart.render();
+
+        } d2c_areaChart_5();
+
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+    template name:{{dataments}}
+    template url:{{https://www.designtocodes.com/product/dataments-free-bootstrap-admin-dashboard-template/}}
+    description:{{unveiling the dataments free bootstrap admin dashboard template, your ultimate solution to a seamless web management experience! this is more than just a template; it's your partner in crafting a digital masterpiece.}}
+    author: designtocodes 
+    author url: https://www.designtocodes.com 
+    text domain:{{dataments}}
+-->
