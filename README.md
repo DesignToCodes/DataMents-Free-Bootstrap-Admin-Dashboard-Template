@@ -20,7 +20,7 @@ DataMents is a free, open-source Bootstrap admin dashboard template perfect for 
 
 
 ### [ 🚀 Download Now or View Live Demo 🚀 ](https://designtocodes.com/product/dataments-free-bootstrap-admin-dashboard-template/)
-###  [🔥 Checkout Our More Awesome Dashboard 🔥](https://designtocodes.com/)
+###  [🔥Checkout Our More Awesome Dashboard](https://designtocodes.com/)
 
 
 **DataMents is a free and SEO-friendly Bootstrap admin dashboard template that is perfect for any project. It is responsive, modern, and clean.**
